@@ -1,5 +1,7 @@
 # Transmission Remote (Microsoft Edge extension)
 
+![Transmission Remote](store/images/promo-large-1400x560.png)
+
 Shows what your Transmission server is doing and lets you start, pause and remove torrents.
 Clicking a `.torrent` or magnet link on any web page opens an "Add torrent" dialog with the
 torrent's details, a file list and a choice of download folder.
