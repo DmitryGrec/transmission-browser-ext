@@ -3,7 +3,7 @@
     "message": "Transmission Remote"
   },
   "extDescription": {
-    "message": "Affiche les torrents de votre serveur Transmission, les démarre, les met en pause ou les supprime, et ajoute des fichiers .torrent ou des liens magnet en choisissant le dossier de téléchargement."
+    "message": "Pilotez votre serveur Transmission : gérez vos torrents, ajoutez .torrent et liens magnet en un clic, choisissez le dossier."
   },
   "actionTitle": {
     "message": "Transmission"

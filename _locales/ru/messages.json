@@ -3,7 +3,7 @@
     "message": "Transmission Remote"
   },
   "extDescription": {
-    "message": "Показывает торренты на вашем сервере Transmission, запускает, останавливает и удаляет их, добавляет .torrent и magnet-ссылки с выбором папки загрузки."
+    "message": "Управление сервером Transmission: список торрентов, запуск и пауза, добавление .torrent и magnet-ссылок в один клик с выбором папки."
   },
   "actionTitle": {
     "message": "Transmission"

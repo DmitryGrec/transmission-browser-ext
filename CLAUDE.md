@@ -23,7 +23,10 @@ manager, no dependencies, no tests, no linter.
 - Distribution is by zipping the folder (`transmission-edge.zip`, mentioned in the README). The store
   package `dist/transmission-edge-<version>.zip` holds only the runtime files (`manifest.json`,
   `background/`, `content/`, `popup/`, `options/`, `add/`, `lib/`, `icons/`, `_locales/`), not `.idea`,
-  docs or `dist/`. `PRIVACY.md` is the store privacy policy and
+  docs or `dist/`; build it with `pwsh store/build.ps1`. `store/` also holds the Edge Add-ons listing
+  text (`LISTING.md`), the submission guide (`SUBMISSION.md`) and the store images (`images/`,
+  regenerated from the real pages by `bash store/mockup/render.sh`). The manifest `description`
+  must stay ≤132 characters in every locale. `PRIVACY.md` is the store privacy policy and
   explains each permission; update it when permissions or data flows change.
 - Messages from content scripts come from arbitrary pages: `background.js` validates their URLs/data, and
   `content.js` ignores untrusted (script-generated) clicks.

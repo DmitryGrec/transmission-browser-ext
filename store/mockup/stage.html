@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; }
+  body {
+    font-family: "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif; color: #fff;
+    background: radial-gradient(1200px 700px at 85% 10%, #2b3f6b 0%, transparent 60%),
+                radial-gradient(900px 600px at 0% 100%, #5a1b22 0%, transparent 55%), #121826;
+    display: flex; align-items: center; gap: 56px; padding: 0 72px;
+  }
+  .copy { flex: 0 0 400px; }
+  .brand { display: flex; align-items: center; gap: 12px; font-size: 18px; font-weight: 600; opacity: .9; margin-bottom: 28px; }
+  .brand img { width: 40px; height: 40px; }
+  h1 { font-size: 44px; line-height: 1.12; font-weight: 700; letter-spacing: -.5px; margin-bottom: 18px; }
+  h1 em { font-style: normal; color: #ff8a8a; }
+  p { font-size: 19px; line-height: 1.5; color: #c6cfdf; margin-bottom: 22px; }
+  ul { list-style: none; padding: 0; display: grid; gap: 10px; font-size: 16.5px; color: #dfe5ef; }
+  li::before { content: "✓"; color: #7fd18b; font-weight: 700; margin-right: 10px; }
+  .shot { flex: 1; display: flex; justify-content: center; align-items: center; position: relative; }
+  .win { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.08); }
+  .bar { height: 34px; background: #f3f3f3; border-bottom: 1px solid #ddd; display: flex; align-items: center; gap: 8px; padding: 0 12px; color: #444; font-size: 12.5px; }
+  .bar img { width: 16px; height: 16px; }
+  iframe { display: block; border: 0; }
+  /* toolbar strip above the popup, like Edge */
+  .tb { position: absolute; top: -48px; right: 30px; background: #fff; border-radius: 8px; padding: 6px 10px; display: flex; gap: 12px; align-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.4); }
+  .tb img { width: 20px; height: 20px; }
+  .tb .badge { position: absolute; right: 2px; bottom: 2px; background: #1a73e8; color: #fff; font: 600 10px "Segoe UI"; border-radius: 6px; padding: 0 4px; }
+  .tb span.dot { width: 18px; height: 18px; border-radius: 50%; background: #e3e3e3; display: inline-block; }
+  .page { position: absolute; inset: 0; }
+  /* tiles */
+  body.tile { padding: 0 40px; gap: 32px; }
+</style>
+</head>
+<body>
+<script>
+const q = new URLSearchParams(location.search);
+const s = q.get("s");
+const ICON = "/icons/icon128.png";
+const scenes = {
+  1: { h: "Your Transmission server, <em>one click away</em>",
+       p: "See every torrent on your home server or NAS right from the Edge toolbar.",
+       li: ["Live speeds, progress, peers and ETA", "Start, pause or remove with one click", "Filter: active, downloading, seeding, paused", "Badge shows downloads and errors"],
+       frame: `<div class="tb"><span class="dot"></span><span class="dot"></span><span style="position:relative"><img src="${ICON}"><span class="badge">3</span></span></div>
+               <div class="win"><iframe src="/popup/popup.html" width="440" height="520"></iframe></div>` },
+  2: { h: "Click a link. <em>Pick files and folder.</em> Done.",
+       p: "Clicking a .torrent or magnet link on any site opens a clean Add dialog instead of a download.",
+       li: ["Name, size, tracker and full file list", "Untick the files you don't need", "Choose one of your allowed folders", "Works on sites that need you logged in"],
+       frame: `<div class="win"><div class="bar"><img src="${ICON}">Add torrent – Transmission</div><iframe src="/add/add.html?key=add-demo" width="580" height="610"></iframe></div>` },
+  3: { h: "Set up in a minute. <em>Downloads stay where you allow.</em>",
+       p: "Enter your server address, test the connection, choose the folders torrents may use.",
+       li: ["HTTP or HTTPS, custom port and login", "Folder suggestions from your server", "Nothing can be saved outside download-dir", "Settings sync across your PCs"],
+       frame: `<div class="win"><div class="bar"><img src="${ICON}">Transmission Remote – Settings</div><iframe src="/options/options.html" width="640" height="640" style="zoom:.95"></iframe></div>` },
+  4: { h: "Private by design. <em>Speaks your language.</em>",
+       p: "No accounts, no analytics, no ads. The extension only talks to your own Transmission server.",
+       li: ["English, Deutsch, Español, Français", "Português (Brasil), Русский, 简体中文", "Follows Edge's light and dark theme", "Free, no account needed"],
+       frame: `<div class="win" style="background:#1f1f1f"><iframe src="/popup/popup.html?lang=${q.get("lang") || "de"}" width="440" height="520"></iframe></div>` },
+};
+if (q.get("tile") === "small") {
+  document.body.className = "tile";
+  document.body.style.cssText = "flex-direction:column;justify-content:center;align-items:flex-start;gap:0;padding:0 34px";
+  document.body.innerHTML = `
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px"><img src="${ICON}" style="width:72px;height:72px">
+      <div style="font-size:30px;font-weight:700;line-height:1.05">Transmission<br>Remote</div></div>
+    <div style="font-size:19px;line-height:1.35;color:#c6cfdf">Manage your Transmission server<br>and add torrents in one click.</div>`;
+} else if (q.get("tile") === "large") {
+  document.body.style.padding = "0 90px";
+  document.body.innerHTML = `
+    <div class="copy" style="flex:0 0 560px">
+      <div class="brand" style="font-size:24px"><img src="${ICON}" style="width:64px;height:64px">Transmission Remote</div>
+      <h1 style="font-size:54px">Your torrent server, <em>right in Edge</em></h1>
+      <p style="font-size:22px;margin:0">Monitor and control Transmission. Add .torrent and magnet links in one click.</p>
+    </div>
+    <div class="shot" style="align-self:flex-start;padding-top:70px"><div class="win"><iframe src="/popup/popup.html" width="440" height="560"></iframe></div></div>`;
+} else {
+  const c = scenes[s];
+  document.body.innerHTML = `
+    <div class="copy">
+      <div class="brand"><img src="${ICON}">Transmission Remote</div>
+      <h1>${c.h}</h1><p>${c.p}</p><ul>${c.li.map((x) => `<li>${x}</li>`).join("")}</ul>
+    </div>
+    <div class="shot">${c.frame}</div>`;
+}
+</script>
+</body>
+</html>

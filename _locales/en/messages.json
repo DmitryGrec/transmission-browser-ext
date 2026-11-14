@@ -3,7 +3,7 @@
     "message": "Transmission Remote"
   },
   "extDescription": {
-    "message": "See torrent activity on your Transmission server, start/stop/remove torrents, and add .torrent or magnet links with a choice of download folder."
+    "message": "Control your Transmission server: see and manage torrents, add .torrent and magnet links in one click, pick the download folder."
   },
   "actionTitle": {
     "message": "Transmission"

@@ -3,7 +3,7 @@
     "message": "Transmission Remote"
   },
   "extDescription": {
-    "message": "Mostra os torrents do seu servidor Transmission, inicia, para e remove torrents e adiciona arquivos .torrent e links magnet escolhendo a pasta de download."
+    "message": "Controle seu servidor Transmission: gerencie torrents e adicione .torrent e links magnet com um clique, escolhendo a pasta."
   },
   "actionTitle": {
     "message": "Transmission"
