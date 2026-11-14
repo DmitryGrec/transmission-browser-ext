@@ -18,8 +18,8 @@ manager, no dependencies, no tests, no linter.
   right-click → Inspect.
 - `manifest.json` has a `key` (public key only) that pins the extension ID to
   `ebhdpnafjolpgegnlgphcnbkmloipopm` wherever it is loaded unpacked, so `chrome.storage.sync` settings
-  are shared between PCs. Do not change or remove it, or synced settings are lost. Remove it only for a
-  store upload if the store rejects it.
+  are shared between PCs. Do not change or remove it, or synced settings are lost. Edge Add-ons rejects
+  it, so `store/build.ps1` drops it from the store package only.
 - Distribution is by zipping the folder (`transmission-edge.zip`, mentioned in the README). The store
   package `dist/transmission-edge-<version>.zip` holds only the runtime files (`manifest.json`,
   `background/`, `content/`, `popup/`, `options/`, `add/`, `lib/`, `icons/`, `_locales/`), not `.idea`,

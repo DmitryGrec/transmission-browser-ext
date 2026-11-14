@@ -70,11 +70,11 @@ Privacy policy: https://github.com/DmitryGrec/transmission-browser-ext/blob/main
 - **Logo size.** Partner Center asks for a square logo of at least 128×128 and recommends 300×300.
   `images/logo-128.png` is the 128 px icon. A 300 px version needs a new drawing, because enlarging the
   128 px image would blur it.
-- **The manifest `key`.** The package keeps it, so a store install would get the same ID as the
-  unpacked copy. If Partner Center refuses the upload over `key`, rebuild with
-  `pwsh store/build.ps1 -StripKey`. The store assigns its own ID in that case, so settings synced
-  from the unpacked copy will not carry over. Users set the extension up once more.
+- **The manifest `key`.** Partner Center rejects it ("The manifest shouldn't contain the key
+  field"), so `build.ps1` always leaves it out of the package. `manifest.json` in the repo keeps it
+  for unpacked copies. The store assigns its own extension ID, so settings synced from an unpacked copy
+  do not carry over to the store version. Set it up once more after installing from the store.
 - **Updating the published version.** Raise `version`, rebuild, then in Partner Center open the extension
   → **Packages** → **Replace** → **Publish**.
 - **Optional: Chrome Web Store.** The same zip works there too (one-time fee of US$5). The Chrome
-  store does reject `key`, so use `-StripKey`.
+  store also rejects `key`, which the build already leaves out.

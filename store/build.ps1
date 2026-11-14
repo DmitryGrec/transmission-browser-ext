@@ -1,7 +1,7 @@
 # Builds the Edge Add-ons package dist/transmission-edge-<version>.zip from the runtime files only.
-# Usage (from anywhere):  pwsh store/build.ps1            keeps the manifest "key"
-#                         pwsh store/build.ps1 -StripKey  drops it (only if Partner Center rejects it)
-param([switch]$StripKey)
+# Usage (from anywhere): pwsh store/build.ps1
+# The manifest "key" (it pins the ID of unpacked copies) is left out of the package: Edge Add-ons and
+# the Chrome Web Store both reject it. manifest.json in the repo keeps it.
 $ErrorActionPreference = "Stop"
 Add-Type -AssemblyName System.IO.Compression, System.IO.Compression.FileSystem
 
@@ -10,6 +10,12 @@ $manifestText = Get-Content (Join-Path $root "manifest.json") -Raw -Encoding utf
 $version = ($manifestText | ConvertFrom-Json).version
 $dirs = "background", "content", "popup", "options", "add", "lib", "icons", "_locales"
 
+# Drop the "key" line as a whole so the rest of the manifest stays byte-identical.
+$storeManifest = $manifestText -replace '(?m)^[ \t]*"key":[ \t]*"[^"]*",[ \t]*\r?\n', ''
+if (($storeManifest | ConvertFrom-Json).PSObject.Properties.Name -contains "key") {
+  throw "Could not remove `"key`" from manifest.json"
+}
+
 $dist = Join-Path $root "dist"
 New-Item -ItemType Directory -Force $dist | Out-Null
 $zipPath = Join-Path $dist "transmission-edge-$version.zip"
@@ -17,11 +23,9 @@ if (Test-Path $zipPath) { Remove-Item $zipPath -Force -Confirm:$false }
 
 $zip = [System.IO.Compression.ZipFile]::Open($zipPath, "Create")
 try {
-  # manifest.json, optionally without "key" (removed as a whole line so the rest stays byte-identical)
-  if ($StripKey) { $manifestText = $manifestText -replace '(?m)^\s*"key":\s*"[^"]*",\r?\n', '' }
   $entry = $zip.CreateEntry("manifest.json", "Optimal")
   $w = New-Object System.IO.StreamWriter($entry.Open(), (New-Object System.Text.UTF8Encoding($false)))
-  $w.Write($manifestText); $w.Close()
+  $w.Write($storeManifest); $w.Close()
 
   foreach ($d in $dirs) {
     Get-ChildItem (Join-Path $root $d) -Recurse -File | ForEach-Object {
@@ -33,4 +37,4 @@ try {
 } finally { $zip.Dispose() }
 
 $kb = [math]::Round((Get-Item $zipPath).Length / 1KB)
-Write-Host "Built $zipPath ($kb KB)$(if ($StripKey) { ', without key' })"
+Write-Host "Built $zipPath ($kb KB, without manifest key)"
