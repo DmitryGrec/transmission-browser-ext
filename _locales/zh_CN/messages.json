@@ -1,0 +1,467 @@
+{
+  "extName": {
+    "message": "Transmission Remote"
+  },
+  "extDescription": {
+    "message": "查看 Transmission 服务器上的种子，启动、暂停、删除种子，并在添加 .torrent 文件或磁力链接时选择下载文件夹。"
+  },
+  "actionTitle": {
+    "message": "Transmission"
+  },
+  "byteUnits": {
+    "message": "B KB MB GB TB"
+  },
+  "perSecond": {
+    "message": "$1/s"
+  },
+  "etaS": {
+    "message": "$1秒"
+  },
+  "etaM": {
+    "message": "$1分"
+  },
+  "etaHM": {
+    "message": "$1小时$2分"
+  },
+  "etaDH": {
+    "message": "$1天$2小时"
+  },
+  "status0": {
+    "message": "已暂停"
+  },
+  "status1": {
+    "message": "等待校验"
+  },
+  "status2": {
+    "message": "正在校验"
+  },
+  "status3": {
+    "message": "排队中"
+  },
+  "status4": {
+    "message": "正在下载"
+  },
+  "status5": {
+    "message": "等待做种"
+  },
+  "status6": {
+    "message": "正在做种"
+  },
+  "add": {
+    "message": "添加"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "remove": {
+    "message": "删除"
+  },
+  "openSettings": {
+    "message": "打开设置"
+  },
+  "connecting": {
+    "message": "正在连接…"
+  },
+  "totalDown": {
+    "message": "总下载速度"
+  },
+  "totalUp": {
+    "message": "总上传速度"
+  },
+  "startAll": {
+    "message": "全部开始"
+  },
+  "pauseAll": {
+    "message": "全部暂停"
+  },
+  "openWeb": {
+    "message": "打开 Transmission 网页界面"
+  },
+  "openOptions": {
+    "message": "连接设置"
+  },
+  "filterAll": {
+    "message": "全部"
+  },
+  "filterActive": {
+    "message": "活动"
+  },
+  "filterDownloading": {
+    "message": "下载中"
+  },
+  "filterSeeding": {
+    "message": "做种中"
+  },
+  "filterPaused": {
+    "message": "已暂停"
+  },
+  "removeConfirm": {
+    "message": "删除这个种子？"
+  },
+  "deleteFiles": {
+    "message": "同时删除文件"
+  },
+  "start": {
+    "message": "开始"
+  },
+  "pause": {
+    "message": "暂停"
+  },
+  "noTorrents": {
+    "message": "此服务器上没有种子。"
+  },
+  "nothingHere": {
+    "message": "这里什么都没有。"
+  },
+  "torrentError": {
+    "message": "错误：$1"
+  },
+  "pctOf": {
+    "message": "$2 中的 $1"
+  },
+  "peersOf": {
+    "message": "用户 $1/$2"
+  },
+  "timeLeft": {
+    "message": "剩余 $1"
+  },
+  "seedingInfo": {
+    "message": "做种中 · 分享率 $1 · 用户 $2"
+  },
+  "verifyingPct": {
+    "message": "正在校验 $1"
+  },
+  "pausedInfo": {
+    "message": "已暂停 · $1"
+  },
+  "optionsTitle": {
+    "message": "Transmission Remote – 设置"
+  },
+  "welcomeHtml": {
+    "message": "欢迎！请输入 Transmission 服务器的地址并点击<b>测试连接</b>，然后选择允许保存种子的文件夹。"
+  },
+  "hintHtml": {
+    "message": "Transmission 的其他设置（限速、队列、用户…）请在 <a id=\"webLink\" href=\"#\" target=\"_blank\">Transmission 网页界面</a>中修改。"
+  },
+  "legendServer": {
+    "message": "1. 服务器"
+  },
+  "defaultProtocol": {
+    "message": "默认协议"
+  },
+  "serverAddress": {
+    "message": "服务器 IP 或 URL"
+  },
+  "serverPlaceholder": {
+    "message": "例如 192.168.1.10、nas.local:9091 或 https://host:9091"
+  },
+  "defaultPort": {
+    "message": "默认端口"
+  },
+  "advanced": {
+    "message": "高级"
+  },
+  "rpcPath": {
+    "message": "RPC 路径"
+  },
+  "webPath": {
+    "message": "网页界面路径"
+  },
+  "username": {
+    "message": "用户名"
+  },
+  "ifRequired": {
+    "message": "（如需要）"
+  },
+  "password": {
+    "message": "密码"
+  },
+  "testConnection": {
+    "message": "测试连接"
+  },
+  "savedAfterTest": {
+    "message": "服务器地址只有在测试成功后才会保存。"
+  },
+  "legendFolders": {
+    "message": "2. 允许的下载文件夹"
+  },
+  "foldersInsideHtml": {
+    "message": "文件夹位于服务器的 <b>download-dir</b> 内"
+  },
+  "foldersHelpHtml": {
+    "message": "添加窗口只提供这里列出的文件夹，并预先选中<b>默认</b>文件夹（如果没有标记，则选中上次使用的文件夹）。"
+  },
+  "newDirPlaceholder": {
+    "message": "例如 movies、shows 或留空"
+  },
+  "usedByTorrents": {
+    "message": "你的种子正在使用："
+  },
+  "legendBehaviour": {
+    "message": "3. 行为"
+  },
+  "optBadge": {
+    "message": "在工具栏图标上显示正在下载的种子数"
+  },
+  "optInterceptClicks": {
+    "message": "点击 .torrent 或磁力链接时打开添加窗口"
+  },
+  "optInterceptDownloads": {
+    "message": "同时拦截浏览器开始下载的 .torrent 文件"
+  },
+  "optStartAdded": {
+    "message": "默认立即开始添加的种子"
+  },
+  "language": {
+    "message": "语言"
+  },
+  "langAuto": {
+    "message": "自动"
+  },
+  "langNote": {
+    "message": "“自动”会使用 Edge 设置中首选语言里第一个受支持的语言。"
+  },
+  "autosaveNote": {
+    "message": "更改会自动保存。"
+  },
+  "saved": {
+    "message": "已保存。"
+  },
+  "connectsTo": {
+    "message": "连接到 $1"
+  },
+  "permissionDenied": {
+    "message": "未授予此地址的权限"
+  },
+  "connectedTo": {
+    "message": "已连接到 Transmission $1"
+  },
+  "noFoldersYet": {
+    "message": "还没有文件夹，请在下方添加。"
+  },
+  "defaultOn": {
+    "message": "★ 默认"
+  },
+  "setDefault": {
+    "message": "设为默认"
+  },
+  "defaultOnTitle": {
+    "message": "在添加窗口中预先选中。点击改为使用上次使用的文件夹"
+  },
+  "setDefaultTitle": {
+    "message": "在添加窗口中预先选中此文件夹"
+  },
+  "noFoldersAllowed": {
+    "message": "没有允许的文件夹：在你添加文件夹之前，添加窗口无法添加种子。"
+  },
+  "addWindowTitle": {
+    "message": "添加种子 – Transmission"
+  },
+  "addTorrent": {
+    "message": "添加种子"
+  },
+  "readingTorrent": {
+    "message": "正在读取种子…"
+  },
+  "couldntDownload": {
+    "message": "无法下载种子。"
+  },
+  "fallbackHelp": {
+    "message": "你可以改用浏览器下载（下方按钮，或在页面上按住 Ctrl 点击链接），然后在这里选择下载的文件。"
+  },
+  "fileAccessHintHtml": {
+    "message": "要自动完成此操作，请为此扩展开启<b>允许访问文件 URL</b>：之后窗口会自行读取 Edge 下载的文件。"
+  },
+  "openExtSettings": {
+    "message": "打开扩展设置"
+  },
+  "downloadInBrowser": {
+    "message": "在浏览器中下载"
+  },
+  "chooseFile": {
+    "message": "选择 .torrent 文件…"
+  },
+  "orPressAdd": {
+    "message": "或点击“添加”，让 Transmission 自己尝试下载该链接。"
+  },
+  "files": {
+    "message": "文件"
+  },
+  "downloadTo": {
+    "message": "下载到"
+  },
+  "startNow": {
+    "message": "立即开始下载"
+  },
+  "errSiteRefused": {
+    "message": "网站拒绝了下载（HTTP $1）"
+  },
+  "errSiteUnreachable": {
+    "message": "无法连接到网站"
+  },
+  "errSiteNotTorrent": {
+    "message": "网站返回的不是 .torrent 文件（可能是登录页面）"
+  },
+  "errDownloadGone": {
+    "message": "下载项已消失"
+  },
+  "errEdgeFailed": {
+    "message": "Edge 无法下载（$1）"
+  },
+  "interrupted": {
+    "message": "已中断"
+  },
+  "edgePaused": {
+    "message": "Edge 暂停了下载。请在 Edge 的下载中继续（Ctrl+J）。"
+  },
+  "edgeAsksKeep": {
+    "message": "Edge 在询问是否保留该文件。请在 Edge 的下载中选择“保留”（Ctrl+J）。"
+  },
+  "errTooLong": {
+    "message": "下载耗时过长"
+  },
+  "errReadFile": {
+    "message": "无法读取下载的文件"
+  },
+  "waitingDownload": {
+    "message": "正在等待 Edge 完成下载…"
+  },
+  "errFileNotTorrent": {
+    "message": "下载的文件不是 .torrent（可能是登录页面）"
+  },
+  "savedAs": {
+    "message": "Edge 已将其保存为 $1。请在下方选择该文件。"
+  },
+  "downloading": {
+    "message": "正在下载…"
+  },
+  "factSize": {
+    "message": "大小"
+  },
+  "sizeInFiles_other": {
+    "message": "$1，共 $2 个文件"
+  },
+  "factTracker": {
+    "message": "Tracker"
+  },
+  "moreTrackers": {
+    "message": "$1（另有 $2 个）"
+  },
+  "factComment": {
+    "message": "注释"
+  },
+  "factCreated": {
+    "message": "创建"
+  },
+  "factPrivate": {
+    "message": "私有"
+  },
+  "yes": {
+    "message": "是"
+  },
+  "selection": {
+    "message": "$1/$2 · $3"
+  },
+  "noDirsAllowed": {
+    "message": "还没有允许的下载文件夹。"
+  },
+  "errNoDownloadDir": {
+    "message": "Transmission 未报告其 download-dir"
+  },
+  "freeSpace": {
+    "message": "可用 $1"
+  },
+  "freeSpaceLow": {
+    "message": "可用 $1（空间不足）"
+  },
+  "dirNotAllowed": {
+    "message": "此文件夹不在允许列表中"
+  },
+  "adding": {
+    "message": "正在添加…"
+  },
+  "alreadyAdded": {
+    "message": "此种子已在 Transmission 中。"
+  },
+  "added": {
+    "message": "已添加到 Transmission。"
+  },
+  "nothingToAdd": {
+    "message": "没有可添加的内容。"
+  },
+  "magnetLink": {
+    "message": "磁力链接"
+  },
+  "factType": {
+    "message": "类型"
+  },
+  "magnetType": {
+    "message": "磁力链接（Transmission 获取元数据后会显示文件列表）"
+  },
+  "factInfoHash": {
+    "message": "信息哈希"
+  },
+  "factTrackers": {
+    "message": "Tracker"
+  },
+  "torrentFallbackName": {
+    "message": "种子"
+  },
+  "setupFirst": {
+    "message": "请先设置 Transmission 服务器。"
+  },
+  "errNoAddress": {
+    "message": "请输入 Transmission 服务器的地址"
+  },
+  "errBadAddress": {
+    "message": "这看起来不是有效的地址"
+  },
+  "errProtocol": {
+    "message": "仅支持 http 和 https"
+  },
+  "errAbsolute": {
+    "message": "请使用 download-dir 内的文件夹，而不是绝对路径"
+  },
+  "errBadChars": {
+    "message": "文件夹名称包含无效字符"
+  },
+  "errDotDot": {
+    "message": "不允许使用 \"..\"：文件夹必须位于 download-dir 内"
+  },
+  "errNotSetUp": {
+    "message": "尚未设置 Transmission 服务器"
+  },
+  "errCannotReach": {
+    "message": "无法连接到 $1"
+  },
+  "errAuth": {
+    "message": "用户名或密码错误"
+  },
+  "errForbidden": {
+    "message": "Transmission 拒绝访问（请检查 rpc-whitelist）"
+  },
+  "errHttp": {
+    "message": "服务器返回 HTTP $1"
+  },
+  "errRpc": {
+    "message": "RPC 错误"
+  },
+  "errHandshake": {
+    "message": "会话握手失败"
+  },
+  "errBadTorrent": {
+    "message": "不是有效的种子文件"
+  },
+  "badgeNotSetUp": {
+    "message": "Transmission：尚未设置。请打开扩展的选项。"
+  },
+  "badgeSummary": {
+    "message": "Transmission：$1 个正在下载，共 $2 个"
+  },
+  "badgeError": {
+    "message": "Transmission：$1"
+  },
+  "menuAdd": {
+    "message": "添加到 Transmission…"
+  }
+}

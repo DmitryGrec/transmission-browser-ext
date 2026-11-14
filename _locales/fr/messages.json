@@ -1,0 +1,470 @@
+{
+  "extName": {
+    "message": "Transmission Remote"
+  },
+  "extDescription": {
+    "message": "Affiche les torrents de votre serveur Transmission, les démarre, les met en pause ou les supprime, et ajoute des fichiers .torrent ou des liens magnet en choisissant le dossier de téléchargement."
+  },
+  "actionTitle": {
+    "message": "Transmission"
+  },
+  "byteUnits": {
+    "message": "o Ko Mo Go To"
+  },
+  "perSecond": {
+    "message": "$1/s"
+  },
+  "etaS": {
+    "message": "$1 s"
+  },
+  "etaM": {
+    "message": "$1 min"
+  },
+  "etaHM": {
+    "message": "$1 h $2 min"
+  },
+  "etaDH": {
+    "message": "$1 j $2 h"
+  },
+  "status0": {
+    "message": "En pause"
+  },
+  "status1": {
+    "message": "En attente de vérification"
+  },
+  "status2": {
+    "message": "Vérification"
+  },
+  "status3": {
+    "message": "En file d'attente"
+  },
+  "status4": {
+    "message": "Téléchargement"
+  },
+  "status5": {
+    "message": "En attente de partage"
+  },
+  "status6": {
+    "message": "Partage"
+  },
+  "add": {
+    "message": "Ajouter"
+  },
+  "cancel": {
+    "message": "Annuler"
+  },
+  "remove": {
+    "message": "Supprimer"
+  },
+  "openSettings": {
+    "message": "Ouvrir les paramètres"
+  },
+  "connecting": {
+    "message": "Connexion…"
+  },
+  "totalDown": {
+    "message": "Vitesse totale de téléchargement"
+  },
+  "totalUp": {
+    "message": "Vitesse totale d'envoi"
+  },
+  "startAll": {
+    "message": "Tout démarrer"
+  },
+  "pauseAll": {
+    "message": "Tout mettre en pause"
+  },
+  "openWeb": {
+    "message": "Ouvrir l'interface web de Transmission"
+  },
+  "openOptions": {
+    "message": "Paramètres de connexion"
+  },
+  "filterAll": {
+    "message": "Tous"
+  },
+  "filterActive": {
+    "message": "Actifs"
+  },
+  "filterDownloading": {
+    "message": "En téléchargement"
+  },
+  "filterSeeding": {
+    "message": "En partage"
+  },
+  "filterPaused": {
+    "message": "En pause"
+  },
+  "removeConfirm": {
+    "message": "Supprimer ce torrent ?"
+  },
+  "deleteFiles": {
+    "message": "Effacer les fichiers"
+  },
+  "start": {
+    "message": "Démarrer"
+  },
+  "pause": {
+    "message": "Pause"
+  },
+  "noTorrents": {
+    "message": "Aucun torrent sur ce serveur."
+  },
+  "nothingHere": {
+    "message": "Rien ici."
+  },
+  "torrentError": {
+    "message": "Erreur : $1"
+  },
+  "pctOf": {
+    "message": "$1 de $2"
+  },
+  "peersOf": {
+    "message": "pairs $1/$2"
+  },
+  "timeLeft": {
+    "message": "encore $1"
+  },
+  "seedingInfo": {
+    "message": "Partage · ratio $1 · pairs $2"
+  },
+  "verifyingPct": {
+    "message": "Vérification $1"
+  },
+  "pausedInfo": {
+    "message": "En pause · $1"
+  },
+  "optionsTitle": {
+    "message": "Transmission Remote – Paramètres"
+  },
+  "welcomeHtml": {
+    "message": "Bienvenue ! Saisissez l'adresse de votre serveur Transmission et cliquez sur <b>Tester la connexion</b>, puis choisissez les dossiers où les torrents peuvent être enregistrés."
+  },
+  "hintHtml": {
+    "message": "Les autres paramètres de Transmission (limites de vitesse, file d'attente, pairs…) se modifient dans l'<a id=\"webLink\" href=\"#\" target=\"_blank\">interface web de Transmission</a>."
+  },
+  "legendServer": {
+    "message": "1. Serveur"
+  },
+  "defaultProtocol": {
+    "message": "Protocole par défaut"
+  },
+  "serverAddress": {
+    "message": "IP ou URL du serveur"
+  },
+  "serverPlaceholder": {
+    "message": "p. ex. 192.168.1.10, nas.local:9091 ou https://host:9091"
+  },
+  "defaultPort": {
+    "message": "Port par défaut"
+  },
+  "advanced": {
+    "message": "Avancé"
+  },
+  "rpcPath": {
+    "message": "Chemin RPC"
+  },
+  "webPath": {
+    "message": "Chemin de l'interface web"
+  },
+  "username": {
+    "message": "Nom d'utilisateur"
+  },
+  "ifRequired": {
+    "message": "(si nécessaire)"
+  },
+  "password": {
+    "message": "Mot de passe"
+  },
+  "testConnection": {
+    "message": "Tester la connexion"
+  },
+  "savedAfterTest": {
+    "message": "L'adresse du serveur n'est enregistrée qu'après un test réussi."
+  },
+  "legendFolders": {
+    "message": "2. Dossiers de téléchargement autorisés"
+  },
+  "foldersInsideHtml": {
+    "message": "Les dossiers se trouvent dans le <b>download-dir</b> du serveur"
+  },
+  "foldersHelpHtml": {
+    "message": "La fenêtre d'ajout ne propose que les dossiers listés ici et présélectionne celui <b>par défaut</b> (ou le dernier utilisé, si aucun n'est marqué)."
+  },
+  "newDirPlaceholder": {
+    "message": "p. ex. movies, shows ou vide"
+  },
+  "usedByTorrents": {
+    "message": "Utilisés par vos torrents :"
+  },
+  "legendBehaviour": {
+    "message": "3. Comportement"
+  },
+  "optBadge": {
+    "message": "Afficher le nombre de torrents en téléchargement sur l'icône de la barre d'outils"
+  },
+  "optInterceptClicks": {
+    "message": "Ouvrir la fenêtre d'ajout quand je clique sur un lien .torrent ou magnet"
+  },
+  "optInterceptDownloads": {
+    "message": "Intercepter aussi les fichiers .torrent que le navigateur commence à télécharger"
+  },
+  "optStartAdded": {
+    "message": "Démarrer par défaut les torrents ajoutés immédiatement"
+  },
+  "language": {
+    "message": "Langue"
+  },
+  "langAuto": {
+    "message": "Automatique"
+  },
+  "langNote": {
+    "message": "Automatique utilise la première langue prise en charge parmi vos langues préférées dans les paramètres d'Edge."
+  },
+  "autosaveNote": {
+    "message": "Les modifications sont enregistrées automatiquement."
+  },
+  "saved": {
+    "message": "Enregistré."
+  },
+  "connectsTo": {
+    "message": "Se connecte à $1"
+  },
+  "permissionDenied": {
+    "message": "L'autorisation pour cette adresse n'a pas été accordée"
+  },
+  "connectedTo": {
+    "message": "Connecté à Transmission $1"
+  },
+  "noFoldersYet": {
+    "message": "Aucun dossier pour l'instant. Ajoutez-en un ci-dessous."
+  },
+  "defaultOn": {
+    "message": "★ Par défaut"
+  },
+  "setDefault": {
+    "message": "Définir par défaut"
+  },
+  "defaultOnTitle": {
+    "message": "Présélectionné dans la fenêtre d'ajout. Cliquez pour utiliser plutôt le dernier dossier utilisé"
+  },
+  "setDefaultTitle": {
+    "message": "Présélectionner ce dossier dans la fenêtre d'ajout"
+  },
+  "noFoldersAllowed": {
+    "message": "Aucun dossier autorisé : la fenêtre d'ajout ne pourra pas ajouter de torrents tant que vous n'en aurez pas ajouté un."
+  },
+  "addWindowTitle": {
+    "message": "Ajouter un torrent – Transmission"
+  },
+  "addTorrent": {
+    "message": "Ajouter un torrent"
+  },
+  "readingTorrent": {
+    "message": "Lecture du torrent…"
+  },
+  "couldntDownload": {
+    "message": "Impossible de télécharger le torrent."
+  },
+  "fallbackHelp": {
+    "message": "Vous pouvez le télécharger avec le navigateur (bouton ci-dessous, ou Ctrl+clic sur le lien dans la page), puis choisir ici le fichier téléchargé."
+  },
+  "fileAccessHintHtml": {
+    "message": "Pour que cela se fasse automatiquement, activez <b>Autoriser l'accès aux URL de fichier</b> pour cette extension : la fenêtre lira alors elle-même le fichier téléchargé par Edge."
+  },
+  "openExtSettings": {
+    "message": "Ouvrir les paramètres de l'extension"
+  },
+  "downloadInBrowser": {
+    "message": "Télécharger dans le navigateur"
+  },
+  "chooseFile": {
+    "message": "Choisir un fichier .torrent…"
+  },
+  "orPressAdd": {
+    "message": "Ou cliquez sur Ajouter pour que Transmission essaie de télécharger le lien lui-même."
+  },
+  "files": {
+    "message": "Fichiers"
+  },
+  "downloadTo": {
+    "message": "Télécharger dans"
+  },
+  "startNow": {
+    "message": "Démarrer le téléchargement immédiatement"
+  },
+  "errSiteRefused": {
+    "message": "Le site a refusé le téléchargement (HTTP $1)"
+  },
+  "errSiteUnreachable": {
+    "message": "Impossible de se connecter au site"
+  },
+  "errSiteNotTorrent": {
+    "message": "Le site n'a pas renvoyé de fichier .torrent (peut-être une page de connexion)"
+  },
+  "errDownloadGone": {
+    "message": "Le téléchargement a disparu"
+  },
+  "errEdgeFailed": {
+    "message": "Edge n'a pas pu le télécharger ($1)"
+  },
+  "interrupted": {
+    "message": "interrompu"
+  },
+  "edgePaused": {
+    "message": "Edge a mis le téléchargement en pause. Reprenez-le dans les téléchargements d'Edge (Ctrl+J)."
+  },
+  "edgeAsksKeep": {
+    "message": "Edge demande s'il faut conserver le fichier. Choisissez « Conserver » dans les téléchargements d'Edge (Ctrl+J)."
+  },
+  "errTooLong": {
+    "message": "Le téléchargement a pris trop de temps"
+  },
+  "errReadFile": {
+    "message": "Impossible de lire le fichier téléchargé"
+  },
+  "waitingDownload": {
+    "message": "En attente de la fin du téléchargement dans Edge…"
+  },
+  "errFileNotTorrent": {
+    "message": "Le fichier téléchargé n'est pas un .torrent (peut-être une page de connexion)"
+  },
+  "savedAs": {
+    "message": "Edge l'a enregistré sous $1. Choisissez ce fichier ci-dessous."
+  },
+  "downloading": {
+    "message": "Téléchargement…"
+  },
+  "factSize": {
+    "message": "Taille"
+  },
+  "sizeInFiles_one": {
+    "message": "$1 en $2 fichier"
+  },
+  "sizeInFiles_other": {
+    "message": "$1 en $2 fichiers"
+  },
+  "factTracker": {
+    "message": "Tracker"
+  },
+  "moreTrackers": {
+    "message": "$1 (+$2 autres)"
+  },
+  "factComment": {
+    "message": "Commentaire"
+  },
+  "factCreated": {
+    "message": "Créé"
+  },
+  "factPrivate": {
+    "message": "Privé"
+  },
+  "yes": {
+    "message": "Oui"
+  },
+  "selection": {
+    "message": "$1 sur $2 · $3"
+  },
+  "noDirsAllowed": {
+    "message": "Aucun dossier de téléchargement n'est encore autorisé."
+  },
+  "errNoDownloadDir": {
+    "message": "Transmission n'a pas indiqué son download-dir"
+  },
+  "freeSpace": {
+    "message": "$1 libres"
+  },
+  "freeSpaceLow": {
+    "message": "$1 libres (espace insuffisant)"
+  },
+  "dirNotAllowed": {
+    "message": "Ce dossier ne fait pas partie de la liste autorisée"
+  },
+  "adding": {
+    "message": "Ajout…"
+  },
+  "alreadyAdded": {
+    "message": "Ce torrent est déjà dans Transmission."
+  },
+  "added": {
+    "message": "Ajouté à Transmission."
+  },
+  "nothingToAdd": {
+    "message": "Rien à ajouter."
+  },
+  "magnetLink": {
+    "message": "Lien magnet"
+  },
+  "factType": {
+    "message": "Type"
+  },
+  "magnetType": {
+    "message": "Lien magnet (la liste des fichiers apparaît une fois que Transmission a obtenu les métadonnées)"
+  },
+  "factInfoHash": {
+    "message": "Hash"
+  },
+  "factTrackers": {
+    "message": "Trackers"
+  },
+  "torrentFallbackName": {
+    "message": "Torrent"
+  },
+  "setupFirst": {
+    "message": "Configurez d'abord votre serveur Transmission."
+  },
+  "errNoAddress": {
+    "message": "Saisissez l'adresse de votre serveur Transmission"
+  },
+  "errBadAddress": {
+    "message": "Cela ne ressemble pas à une adresse valide"
+  },
+  "errProtocol": {
+    "message": "Seuls http et https sont pris en charge"
+  },
+  "errAbsolute": {
+    "message": "Utilisez un dossier dans download-dir, pas un chemin absolu"
+  },
+  "errBadChars": {
+    "message": "Le nom du dossier contient des caractères non valides"
+  },
+  "errDotDot": {
+    "message": "\"..\" n'est pas autorisé : les dossiers doivent rester dans download-dir"
+  },
+  "errNotSetUp": {
+    "message": "Le serveur Transmission n'est pas encore configuré"
+  },
+  "errCannotReach": {
+    "message": "Impossible de joindre $1"
+  },
+  "errAuth": {
+    "message": "Nom d'utilisateur ou mot de passe incorrect"
+  },
+  "errForbidden": {
+    "message": "Accès refusé par Transmission (vérifiez rpc-whitelist)"
+  },
+  "errHttp": {
+    "message": "Le serveur a répondu HTTP $1"
+  },
+  "errRpc": {
+    "message": "Erreur RPC"
+  },
+  "errHandshake": {
+    "message": "Échec de l'établissement de la session"
+  },
+  "errBadTorrent": {
+    "message": "Fichier torrent non valide"
+  },
+  "badgeNotSetUp": {
+    "message": "Transmission : pas encore configuré. Ouvrez les options de l'extension."
+  },
+  "badgeSummary": {
+    "message": "Transmission : $1 en téléchargement, $2 au total"
+  },
+  "badgeError": {
+    "message": "Transmission : $1"
+  },
+  "menuAdd": {
+    "message": "Ajouter à Transmission…"
+  }
+}

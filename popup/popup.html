@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title data-i18n="actionTitle">Transmission</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="totals">
+      <span class="down" data-i18n-title="totalDown">&#8595; <b id="totDown">–</b></span>
+      <span class="up" data-i18n-title="totalUp">&#8593; <b id="totUp">–</b></span>
+    </div>
+    <div class="actions">
+      <button id="startAll" class="icon" data-i18n-title="startAll">&#9654;</button>
+      <button id="stopAll" class="icon" data-i18n-title="pauseAll">&#10074;&#10074;</button>
+      <button id="openWeb" class="icon" data-i18n-title="openWeb">&#8599;</button>
+      <button id="openOptions" class="icon" data-i18n-title="openOptions">&#9881;</button>
+    </div>
+  </header>
+  <nav id="filters">
+    <button data-filter="all" class="on"><span data-i18n="filterAll">All</span> <span class="n"></span></button>
+    <button data-filter="active"><span data-i18n="filterActive">Active</span> <span class="n"></span></button>
+    <button data-filter="downloading"><span data-i18n="filterDownloading">Downloading</span> <span class="n"></span></button>
+    <button data-filter="seeding"><span data-i18n="filterSeeding">Seeding</span> <span class="n"></span></button>
+    <button data-filter="paused"><span data-i18n="filterPaused">Paused</span> <span class="n"></span></button>
+  </nav>
+  <div id="message" hidden></div>
+  <ul id="list"></ul>
+  <template id="rowTpl">
+    <li class="torrent">
+      <div class="top">
+        <span class="name"></span>
+        <span class="controls">
+          <button class="icon toggle"></button>
+          <button class="icon remove" data-i18n-title="remove">&#10005;</button>
+        </span>
+      </div>
+      <div class="bar"><div class="fill"></div></div>
+      <div class="meta">
+        <span class="status"></span>
+        <span class="rates"></span>
+      </div>
+      <div class="confirm" hidden>
+        <span data-i18n="removeConfirm">Remove this torrent?</span>
+        <button class="keep primary" data-i18n="remove">Remove</button>
+        <button class="wipe danger" data-i18n="deleteFiles">Delete files</button>
+        <button class="cancel" data-i18n="cancel">Cancel</button>
+      </div>
+    </li>
+  </template>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,476 @@
+{
+  "extName": {
+    "message": "Transmission Remote"
+  },
+  "extDescription": {
+    "message": "Показывает торренты на вашем сервере Transmission, запускает, останавливает и удаляет их, добавляет .torrent и magnet-ссылки с выбором папки загрузки."
+  },
+  "actionTitle": {
+    "message": "Transmission"
+  },
+  "byteUnits": {
+    "message": "Б КБ МБ ГБ ТБ"
+  },
+  "perSecond": {
+    "message": "$1/с"
+  },
+  "etaS": {
+    "message": "$1 с"
+  },
+  "etaM": {
+    "message": "$1 мин"
+  },
+  "etaHM": {
+    "message": "$1 ч $2 мин"
+  },
+  "etaDH": {
+    "message": "$1 д $2 ч"
+  },
+  "status0": {
+    "message": "Пауза"
+  },
+  "status1": {
+    "message": "В очереди на проверку"
+  },
+  "status2": {
+    "message": "Проверка"
+  },
+  "status3": {
+    "message": "В очереди"
+  },
+  "status4": {
+    "message": "Загрузка"
+  },
+  "status5": {
+    "message": "В очереди на раздачу"
+  },
+  "status6": {
+    "message": "Раздача"
+  },
+  "add": {
+    "message": "Добавить"
+  },
+  "cancel": {
+    "message": "Отмена"
+  },
+  "remove": {
+    "message": "Удалить"
+  },
+  "openSettings": {
+    "message": "Открыть настройки"
+  },
+  "connecting": {
+    "message": "Подключение…"
+  },
+  "totalDown": {
+    "message": "Общая скорость загрузки"
+  },
+  "totalUp": {
+    "message": "Общая скорость отдачи"
+  },
+  "startAll": {
+    "message": "Запустить все"
+  },
+  "pauseAll": {
+    "message": "Приостановить все"
+  },
+  "openWeb": {
+    "message": "Открыть веб-интерфейс Transmission"
+  },
+  "openOptions": {
+    "message": "Настройки подключения"
+  },
+  "filterAll": {
+    "message": "Все"
+  },
+  "filterActive": {
+    "message": "Активные"
+  },
+  "filterDownloading": {
+    "message": "Загружаются"
+  },
+  "filterSeeding": {
+    "message": "Раздаются"
+  },
+  "filterPaused": {
+    "message": "На паузе"
+  },
+  "removeConfirm": {
+    "message": "Удалить этот торрент?"
+  },
+  "deleteFiles": {
+    "message": "Удалить с файлами"
+  },
+  "start": {
+    "message": "Запустить"
+  },
+  "pause": {
+    "message": "Пауза"
+  },
+  "noTorrents": {
+    "message": "На сервере нет торрентов."
+  },
+  "nothingHere": {
+    "message": "Здесь пусто."
+  },
+  "torrentError": {
+    "message": "Ошибка: $1"
+  },
+  "pctOf": {
+    "message": "$1 из $2"
+  },
+  "peersOf": {
+    "message": "пиры $1/$2"
+  },
+  "timeLeft": {
+    "message": "осталось $1"
+  },
+  "seedingInfo": {
+    "message": "Раздача · рейтинг $1 · пиры $2"
+  },
+  "verifyingPct": {
+    "message": "Проверка $1"
+  },
+  "pausedInfo": {
+    "message": "Пауза · $1"
+  },
+  "optionsTitle": {
+    "message": "Transmission Remote – Настройки"
+  },
+  "welcomeHtml": {
+    "message": "Добро пожаловать! Введите адрес вашего сервера Transmission и нажмите <b>Проверить подключение</b>, затем выберите папки, в которые можно сохранять торренты."
+  },
+  "hintHtml": {
+    "message": "Остальные настройки Transmission (ограничения скорости, очередь, пиры…) меняются в <a id=\"webLink\" href=\"#\" target=\"_blank\">веб-интерфейсе Transmission</a>."
+  },
+  "legendServer": {
+    "message": "1. Сервер"
+  },
+  "defaultProtocol": {
+    "message": "Протокол по умолчанию"
+  },
+  "serverAddress": {
+    "message": "IP или URL сервера"
+  },
+  "serverPlaceholder": {
+    "message": "напр. 192.168.1.10, nas.local:9091 или https://host:9091"
+  },
+  "defaultPort": {
+    "message": "Порт по умолчанию"
+  },
+  "advanced": {
+    "message": "Дополнительно"
+  },
+  "rpcPath": {
+    "message": "Путь RPC"
+  },
+  "webPath": {
+    "message": "Путь веб-интерфейса"
+  },
+  "username": {
+    "message": "Имя пользователя"
+  },
+  "ifRequired": {
+    "message": "(если требуется)"
+  },
+  "password": {
+    "message": "Пароль"
+  },
+  "testConnection": {
+    "message": "Проверить подключение"
+  },
+  "savedAfterTest": {
+    "message": "Адрес сервера сохраняется только после успешной проверки."
+  },
+  "legendFolders": {
+    "message": "2. Разрешённые папки загрузки"
+  },
+  "foldersInsideHtml": {
+    "message": "Папки находятся внутри <b>download-dir</b> сервера"
+  },
+  "foldersHelpHtml": {
+    "message": "Окно добавления предлагает только перечисленные здесь папки и выбирает папку <b>по умолчанию</b> (или последнюю использованную, если она не отмечена)."
+  },
+  "newDirPlaceholder": {
+    "message": "напр. movies, shows или пусто"
+  },
+  "usedByTorrents": {
+    "message": "Используются вашими торрентами:"
+  },
+  "legendBehaviour": {
+    "message": "3. Поведение"
+  },
+  "optBadge": {
+    "message": "Показывать число загружаемых торрентов на значке панели инструментов"
+  },
+  "optInterceptClicks": {
+    "message": "Открывать окно добавления при щелчке по ссылке .torrent или magnet"
+  },
+  "optInterceptDownloads": {
+    "message": "Также перехватывать файлы .torrent, которые начинает скачивать браузер"
+  },
+  "optStartAdded": {
+    "message": "По умолчанию сразу запускать добавленные торренты"
+  },
+  "language": {
+    "message": "Язык"
+  },
+  "langAuto": {
+    "message": "Автоматически"
+  },
+  "langNote": {
+    "message": "Автоматически выбирается первый поддерживаемый язык из предпочитаемых языков в настройках Edge."
+  },
+  "autosaveNote": {
+    "message": "Изменения сохраняются автоматически."
+  },
+  "saved": {
+    "message": "Сохранено."
+  },
+  "connectsTo": {
+    "message": "Подключение к $1"
+  },
+  "permissionDenied": {
+    "message": "Разрешение для этого адреса не получено"
+  },
+  "connectedTo": {
+    "message": "Подключено к Transmission $1"
+  },
+  "noFoldersYet": {
+    "message": "Папок пока нет. Добавьте папку ниже."
+  },
+  "defaultOn": {
+    "message": "★ По умолчанию"
+  },
+  "setDefault": {
+    "message": "Сделать по умолчанию"
+  },
+  "defaultOnTitle": {
+    "message": "Выбирается в окне добавления. Нажмите, чтобы вместо неё выбиралась последняя использованная папка"
+  },
+  "setDefaultTitle": {
+    "message": "Выбирать эту папку в окне добавления"
+  },
+  "noFoldersAllowed": {
+    "message": "Нет разрешённых папок: окно добавления не сможет добавлять торренты, пока вы не добавите папку."
+  },
+  "addWindowTitle": {
+    "message": "Добавить торрент – Transmission"
+  },
+  "addTorrent": {
+    "message": "Добавить торрент"
+  },
+  "readingTorrent": {
+    "message": "Чтение торрента…"
+  },
+  "couldntDownload": {
+    "message": "Не удалось скачать торрент."
+  },
+  "fallbackHelp": {
+    "message": "Можно скачать его браузером (кнопка ниже или Ctrl+щелчок по ссылке на странице), а затем выбрать скачанный файл здесь."
+  },
+  "fileAccessHintHtml": {
+    "message": "Чтобы это происходило автоматически, включите для этого расширения <b>Разрешить доступ к URL-адресам файлов</b>: тогда окно само прочитает файл, скачанный Edge."
+  },
+  "openExtSettings": {
+    "message": "Открыть настройки расширения"
+  },
+  "downloadInBrowser": {
+    "message": "Скачать в браузере"
+  },
+  "chooseFile": {
+    "message": "Выбрать файл .torrent…"
+  },
+  "orPressAdd": {
+    "message": "Или нажмите «Добавить», чтобы Transmission попробовал скачать ссылку сам."
+  },
+  "files": {
+    "message": "Файлы"
+  },
+  "downloadTo": {
+    "message": "Сохранить в"
+  },
+  "startNow": {
+    "message": "Сразу начать загрузку"
+  },
+  "errSiteRefused": {
+    "message": "Сайт отказал в загрузке (HTTP $1)"
+  },
+  "errSiteUnreachable": {
+    "message": "Не удалось подключиться к сайту"
+  },
+  "errSiteNotTorrent": {
+    "message": "Сайт вернул не файл .torrent (возможно, страницу входа)"
+  },
+  "errDownloadGone": {
+    "message": "Загрузка пропала"
+  },
+  "errEdgeFailed": {
+    "message": "Edge не смог скачать файл ($1)"
+  },
+  "interrupted": {
+    "message": "прервано"
+  },
+  "edgePaused": {
+    "message": "Edge приостановил загрузку. Возобновите её в загрузках Edge (Ctrl+J)."
+  },
+  "edgeAsksKeep": {
+    "message": "Edge спрашивает, сохранить ли файл. Выберите «Сохранить» в загрузках Edge (Ctrl+J)."
+  },
+  "errTooLong": {
+    "message": "Загрузка заняла слишком много времени"
+  },
+  "errReadFile": {
+    "message": "Не удалось прочитать скачанный файл"
+  },
+  "waitingDownload": {
+    "message": "Ожидание завершения загрузки в Edge…"
+  },
+  "errFileNotTorrent": {
+    "message": "Скачанный файл не является .torrent (возможно, это страница входа)"
+  },
+  "savedAs": {
+    "message": "Edge сохранил его как $1. Выберите этот файл ниже."
+  },
+  "downloading": {
+    "message": "Загрузка…"
+  },
+  "factSize": {
+    "message": "Размер"
+  },
+  "sizeInFiles_one": {
+    "message": "$1 в $2 файле"
+  },
+  "sizeInFiles_few": {
+    "message": "$1 в $2 файлах"
+  },
+  "sizeInFiles_many": {
+    "message": "$1 в $2 файлах"
+  },
+  "sizeInFiles_other": {
+    "message": "$1 в $2 файлах"
+  },
+  "factTracker": {
+    "message": "Трекер"
+  },
+  "moreTrackers": {
+    "message": "$1 (и ещё $2)"
+  },
+  "factComment": {
+    "message": "Комментарий"
+  },
+  "factCreated": {
+    "message": "Создан"
+  },
+  "factPrivate": {
+    "message": "Приватный"
+  },
+  "yes": {
+    "message": "Да"
+  },
+  "selection": {
+    "message": "$1 из $2 · $3"
+  },
+  "noDirsAllowed": {
+    "message": "Пока нет разрешённых папок загрузки."
+  },
+  "errNoDownloadDir": {
+    "message": "Transmission не сообщил свою папку download-dir"
+  },
+  "freeSpace": {
+    "message": "Свободно $1"
+  },
+  "freeSpaceLow": {
+    "message": "Свободно $1 (недостаточно места)"
+  },
+  "dirNotAllowed": {
+    "message": "Этой папки нет в списке разрешённых"
+  },
+  "adding": {
+    "message": "Добавление…"
+  },
+  "alreadyAdded": {
+    "message": "Этот торрент уже есть в Transmission."
+  },
+  "added": {
+    "message": "Добавлено в Transmission."
+  },
+  "nothingToAdd": {
+    "message": "Нечего добавлять."
+  },
+  "magnetLink": {
+    "message": "Magnet-ссылка"
+  },
+  "factType": {
+    "message": "Тип"
+  },
+  "magnetType": {
+    "message": "Magnet-ссылка (список файлов появится, когда Transmission получит метаданные)"
+  },
+  "factInfoHash": {
+    "message": "Хеш"
+  },
+  "factTrackers": {
+    "message": "Трекеры"
+  },
+  "torrentFallbackName": {
+    "message": "Торрент"
+  },
+  "setupFirst": {
+    "message": "Сначала настройте сервер Transmission."
+  },
+  "errNoAddress": {
+    "message": "Введите адрес вашего сервера Transmission"
+  },
+  "errBadAddress": {
+    "message": "Это не похоже на правильный адрес"
+  },
+  "errProtocol": {
+    "message": "Поддерживаются только http и https"
+  },
+  "errAbsolute": {
+    "message": "Укажите папку внутри download-dir, а не абсолютный путь"
+  },
+  "errBadChars": {
+    "message": "Имя папки содержит недопустимые символы"
+  },
+  "errDotDot": {
+    "message": "\"..\" не допускается: папки должны оставаться внутри download-dir"
+  },
+  "errNotSetUp": {
+    "message": "Сервер Transmission ещё не настроен"
+  },
+  "errCannotReach": {
+    "message": "Не удаётся подключиться к $1"
+  },
+  "errAuth": {
+    "message": "Неверное имя пользователя или пароль"
+  },
+  "errForbidden": {
+    "message": "Transmission запретил доступ (проверьте rpc-whitelist)"
+  },
+  "errHttp": {
+    "message": "Сервер ответил HTTP $1"
+  },
+  "errRpc": {
+    "message": "Ошибка RPC"
+  },
+  "errHandshake": {
+    "message": "Не удалось установить сеанс"
+  },
+  "errBadTorrent": {
+    "message": "Неверный файл торрента"
+  },
+  "badgeNotSetUp": {
+    "message": "Transmission: ещё не настроен. Откройте параметры расширения."
+  },
+  "badgeSummary": {
+    "message": "Transmission: загружается $1, всего $2"
+  },
+  "badgeError": {
+    "message": "Transmission: $1"
+  },
+  "menuAdd": {
+    "message": "Добавить в Transmission…"
+  }
+}

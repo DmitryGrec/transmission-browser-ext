@@ -1,0 +1,470 @@
+{
+  "extName": {
+    "message": "Transmission Remote"
+  },
+  "extDescription": {
+    "message": "See torrent activity on your Transmission server, start/stop/remove torrents, and add .torrent or magnet links with a choice of download folder."
+  },
+  "actionTitle": {
+    "message": "Transmission"
+  },
+  "byteUnits": {
+    "message": "B KB MB GB TB"
+  },
+  "perSecond": {
+    "message": "$1/s"
+  },
+  "etaS": {
+    "message": "$1s"
+  },
+  "etaM": {
+    "message": "$1m"
+  },
+  "etaHM": {
+    "message": "$1h $2m"
+  },
+  "etaDH": {
+    "message": "$1d $2h"
+  },
+  "status0": {
+    "message": "Paused"
+  },
+  "status1": {
+    "message": "Queued to verify"
+  },
+  "status2": {
+    "message": "Verifying"
+  },
+  "status3": {
+    "message": "Queued"
+  },
+  "status4": {
+    "message": "Downloading"
+  },
+  "status5": {
+    "message": "Queued to seed"
+  },
+  "status6": {
+    "message": "Seeding"
+  },
+  "add": {
+    "message": "Add"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "remove": {
+    "message": "Remove"
+  },
+  "openSettings": {
+    "message": "Open settings"
+  },
+  "connecting": {
+    "message": "Connecting…"
+  },
+  "totalDown": {
+    "message": "Total download speed"
+  },
+  "totalUp": {
+    "message": "Total upload speed"
+  },
+  "startAll": {
+    "message": "Start all"
+  },
+  "pauseAll": {
+    "message": "Pause all"
+  },
+  "openWeb": {
+    "message": "Open Transmission web interface"
+  },
+  "openOptions": {
+    "message": "Connection settings"
+  },
+  "filterAll": {
+    "message": "All"
+  },
+  "filterActive": {
+    "message": "Active"
+  },
+  "filterDownloading": {
+    "message": "Downloading"
+  },
+  "filterSeeding": {
+    "message": "Seeding"
+  },
+  "filterPaused": {
+    "message": "Paused"
+  },
+  "removeConfirm": {
+    "message": "Remove this torrent?"
+  },
+  "deleteFiles": {
+    "message": "Delete files"
+  },
+  "start": {
+    "message": "Start"
+  },
+  "pause": {
+    "message": "Pause"
+  },
+  "noTorrents": {
+    "message": "No torrents on this server."
+  },
+  "nothingHere": {
+    "message": "Nothing here."
+  },
+  "torrentError": {
+    "message": "Error: $1"
+  },
+  "pctOf": {
+    "message": "$1 of $2"
+  },
+  "peersOf": {
+    "message": "peers $1/$2"
+  },
+  "timeLeft": {
+    "message": "$1 left"
+  },
+  "seedingInfo": {
+    "message": "Seeding · ratio $1 · peers $2"
+  },
+  "verifyingPct": {
+    "message": "Verifying $1"
+  },
+  "pausedInfo": {
+    "message": "Paused · $1"
+  },
+  "optionsTitle": {
+    "message": "Transmission Remote – Settings"
+  },
+  "welcomeHtml": {
+    "message": "Welcome! Enter the address of your Transmission server and press <b>Test connection</b>, then choose which folders torrents may be saved to."
+  },
+  "hintHtml": {
+    "message": "Other Transmission settings (speed limits, queue, peers…) are changed in the <a id=\"webLink\" href=\"#\" target=\"_blank\">Transmission web interface</a>."
+  },
+  "legendServer": {
+    "message": "1. Server"
+  },
+  "defaultProtocol": {
+    "message": "Default protocol"
+  },
+  "serverAddress": {
+    "message": "Server IP or URL"
+  },
+  "serverPlaceholder": {
+    "message": "e.g. 192.168.1.10, nas.local:9091 or https://host:9091"
+  },
+  "defaultPort": {
+    "message": "Default port"
+  },
+  "advanced": {
+    "message": "Advanced"
+  },
+  "rpcPath": {
+    "message": "RPC path"
+  },
+  "webPath": {
+    "message": "Web interface path"
+  },
+  "username": {
+    "message": "Username"
+  },
+  "ifRequired": {
+    "message": "(if required)"
+  },
+  "password": {
+    "message": "Password"
+  },
+  "testConnection": {
+    "message": "Test connection"
+  },
+  "savedAfterTest": {
+    "message": "The server address is saved only after a successful test."
+  },
+  "legendFolders": {
+    "message": "2. Allowed download folders"
+  },
+  "foldersInsideHtml": {
+    "message": "Folders are inside the server's <b>download-dir</b>"
+  },
+  "foldersHelpHtml": {
+    "message": "The add dialog only offers the folders listed here and preselects the <b>default</b> one (or the last one used, if none is marked)."
+  },
+  "newDirPlaceholder": {
+    "message": "e.g. movies, shows or empty"
+  },
+  "usedByTorrents": {
+    "message": "Used by your torrents:"
+  },
+  "legendBehaviour": {
+    "message": "3. Behaviour"
+  },
+  "optBadge": {
+    "message": "Show number of downloading torrents on the toolbar icon"
+  },
+  "optInterceptClicks": {
+    "message": "Open the add dialog when I click a .torrent or magnet link"
+  },
+  "optInterceptDownloads": {
+    "message": "Also catch .torrent files the browser starts downloading"
+  },
+  "optStartAdded": {
+    "message": "Start added torrents right away by default"
+  },
+  "language": {
+    "message": "Language"
+  },
+  "langAuto": {
+    "message": "Automatic"
+  },
+  "langNote": {
+    "message": "Automatic uses the first supported language from your preferred languages in Edge settings."
+  },
+  "autosaveNote": {
+    "message": "Changes are saved automatically."
+  },
+  "saved": {
+    "message": "Saved."
+  },
+  "connectsTo": {
+    "message": "Connects to $1"
+  },
+  "permissionDenied": {
+    "message": "Permission for this address was not granted"
+  },
+  "connectedTo": {
+    "message": "Connected to Transmission $1"
+  },
+  "noFoldersYet": {
+    "message": "No folders yet. Add one below."
+  },
+  "defaultOn": {
+    "message": "★ Default"
+  },
+  "setDefault": {
+    "message": "Set default"
+  },
+  "defaultOnTitle": {
+    "message": "Preselected in the add dialog. Click to use the last used folder instead"
+  },
+  "setDefaultTitle": {
+    "message": "Preselect this folder in the add dialog"
+  },
+  "noFoldersAllowed": {
+    "message": "No folders allowed: the add dialog cannot add torrents until you add one."
+  },
+  "addWindowTitle": {
+    "message": "Add torrent – Transmission"
+  },
+  "addTorrent": {
+    "message": "Add torrent"
+  },
+  "readingTorrent": {
+    "message": "Reading torrent…"
+  },
+  "couldntDownload": {
+    "message": "Couldn't download the torrent."
+  },
+  "fallbackHelp": {
+    "message": "You can download it with the browser instead (button below, or Ctrl+click the link on the page), then choose the downloaded file here."
+  },
+  "fileAccessHintHtml": {
+    "message": "To have this happen automatically, turn on <b>Allow access to file URLs</b> for this extension: the dialog then reads the file Edge downloaded by itself."
+  },
+  "openExtSettings": {
+    "message": "Open extension settings"
+  },
+  "downloadInBrowser": {
+    "message": "Download in browser"
+  },
+  "chooseFile": {
+    "message": "Choose .torrent file…"
+  },
+  "orPressAdd": {
+    "message": "Or press Add to let Transmission try to download the link itself."
+  },
+  "files": {
+    "message": "Files"
+  },
+  "downloadTo": {
+    "message": "Download to"
+  },
+  "startNow": {
+    "message": "Start downloading right away"
+  },
+  "errSiteRefused": {
+    "message": "The site refused the download (HTTP $1)"
+  },
+  "errSiteUnreachable": {
+    "message": "Could not connect to the site"
+  },
+  "errSiteNotTorrent": {
+    "message": "The site did not return a .torrent file (maybe a login page)"
+  },
+  "errDownloadGone": {
+    "message": "The download disappeared"
+  },
+  "errEdgeFailed": {
+    "message": "Edge could not download it ($1)"
+  },
+  "interrupted": {
+    "message": "interrupted"
+  },
+  "edgePaused": {
+    "message": "Edge paused the download. Resume it in Edge's downloads (Ctrl+J)."
+  },
+  "edgeAsksKeep": {
+    "message": "Edge is asking whether to keep the file. Choose “Keep” in Edge's downloads (Ctrl+J)."
+  },
+  "errTooLong": {
+    "message": "The download took too long"
+  },
+  "errReadFile": {
+    "message": "Could not read the downloaded file"
+  },
+  "waitingDownload": {
+    "message": "Waiting for Edge to finish the download…"
+  },
+  "errFileNotTorrent": {
+    "message": "The downloaded file is not a .torrent (maybe a login page)"
+  },
+  "savedAs": {
+    "message": "Edge saved it as $1. Choose that file below."
+  },
+  "downloading": {
+    "message": "Downloading…"
+  },
+  "factSize": {
+    "message": "Size"
+  },
+  "sizeInFiles_one": {
+    "message": "$1 in $2 file"
+  },
+  "sizeInFiles_other": {
+    "message": "$1 in $2 files"
+  },
+  "factTracker": {
+    "message": "Tracker"
+  },
+  "moreTrackers": {
+    "message": "$1 (+$2 more)"
+  },
+  "factComment": {
+    "message": "Comment"
+  },
+  "factCreated": {
+    "message": "Created"
+  },
+  "factPrivate": {
+    "message": "Private"
+  },
+  "yes": {
+    "message": "Yes"
+  },
+  "selection": {
+    "message": "$1 of $2 · $3"
+  },
+  "noDirsAllowed": {
+    "message": "No download folders are allowed yet."
+  },
+  "errNoDownloadDir": {
+    "message": "Transmission did not report its download-dir"
+  },
+  "freeSpace": {
+    "message": "$1 free"
+  },
+  "freeSpaceLow": {
+    "message": "$1 free (not enough space)"
+  },
+  "dirNotAllowed": {
+    "message": "This folder is not in the allowed list"
+  },
+  "adding": {
+    "message": "Adding…"
+  },
+  "alreadyAdded": {
+    "message": "This torrent is already in Transmission."
+  },
+  "added": {
+    "message": "Added to Transmission."
+  },
+  "nothingToAdd": {
+    "message": "Nothing to add."
+  },
+  "magnetLink": {
+    "message": "Magnet link"
+  },
+  "factType": {
+    "message": "Type"
+  },
+  "magnetType": {
+    "message": "Magnet link (file list appears after Transmission fetches metadata)"
+  },
+  "factInfoHash": {
+    "message": "Info hash"
+  },
+  "factTrackers": {
+    "message": "Trackers"
+  },
+  "torrentFallbackName": {
+    "message": "Torrent"
+  },
+  "setupFirst": {
+    "message": "Set up your Transmission server first."
+  },
+  "errNoAddress": {
+    "message": "Enter the address of your Transmission server"
+  },
+  "errBadAddress": {
+    "message": "That doesn't look like a valid address"
+  },
+  "errProtocol": {
+    "message": "Only http and https are supported"
+  },
+  "errAbsolute": {
+    "message": "Use a folder inside download-dir, not an absolute path"
+  },
+  "errBadChars": {
+    "message": "Folder name contains invalid characters"
+  },
+  "errDotDot": {
+    "message": "\"..\" is not allowed: folders must stay inside download-dir"
+  },
+  "errNotSetUp": {
+    "message": "Transmission server is not set up yet"
+  },
+  "errCannotReach": {
+    "message": "Cannot reach $1"
+  },
+  "errAuth": {
+    "message": "Wrong username or password"
+  },
+  "errForbidden": {
+    "message": "Access denied by Transmission (check rpc-whitelist)"
+  },
+  "errHttp": {
+    "message": "Server answered HTTP $1"
+  },
+  "errRpc": {
+    "message": "RPC error"
+  },
+  "errHandshake": {
+    "message": "Session handshake failed"
+  },
+  "errBadTorrent": {
+    "message": "Not a valid torrent file"
+  },
+  "badgeNotSetUp": {
+    "message": "Transmission: not set up yet. Open the extension's options."
+  },
+  "badgeSummary": {
+    "message": "Transmission: $1 downloading, $2 total"
+  },
+  "badgeError": {
+    "message": "Transmission: $1"
+  },
+  "menuAdd": {
+    "message": "Add to Transmission…"
+  }
+}

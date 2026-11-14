@@ -1,0 +1,470 @@
+{
+  "extName": {
+    "message": "Transmission Remote"
+  },
+  "extDescription": {
+    "message": "Mostra os torrents do seu servidor Transmission, inicia, para e remove torrents e adiciona arquivos .torrent e links magnet escolhendo a pasta de download."
+  },
+  "actionTitle": {
+    "message": "Transmission"
+  },
+  "byteUnits": {
+    "message": "B KB MB GB TB"
+  },
+  "perSecond": {
+    "message": "$1/s"
+  },
+  "etaS": {
+    "message": "$1 s"
+  },
+  "etaM": {
+    "message": "$1 min"
+  },
+  "etaHM": {
+    "message": "$1 h $2 min"
+  },
+  "etaDH": {
+    "message": "$1 d $2 h"
+  },
+  "status0": {
+    "message": "Pausado"
+  },
+  "status1": {
+    "message": "Na fila para verificar"
+  },
+  "status2": {
+    "message": "Verificando"
+  },
+  "status3": {
+    "message": "Na fila"
+  },
+  "status4": {
+    "message": "Baixando"
+  },
+  "status5": {
+    "message": "Na fila para semear"
+  },
+  "status6": {
+    "message": "Semeando"
+  },
+  "add": {
+    "message": "Adicionar"
+  },
+  "cancel": {
+    "message": "Cancelar"
+  },
+  "remove": {
+    "message": "Remover"
+  },
+  "openSettings": {
+    "message": "Abrir configurações"
+  },
+  "connecting": {
+    "message": "Conectando…"
+  },
+  "totalDown": {
+    "message": "Velocidade total de download"
+  },
+  "totalUp": {
+    "message": "Velocidade total de upload"
+  },
+  "startAll": {
+    "message": "Iniciar todos"
+  },
+  "pauseAll": {
+    "message": "Pausar todos"
+  },
+  "openWeb": {
+    "message": "Abrir a interface web do Transmission"
+  },
+  "openOptions": {
+    "message": "Configurações de conexão"
+  },
+  "filterAll": {
+    "message": "Todos"
+  },
+  "filterActive": {
+    "message": "Ativos"
+  },
+  "filterDownloading": {
+    "message": "Baixando"
+  },
+  "filterSeeding": {
+    "message": "Semeando"
+  },
+  "filterPaused": {
+    "message": "Pausados"
+  },
+  "removeConfirm": {
+    "message": "Remover este torrent?"
+  },
+  "deleteFiles": {
+    "message": "Apagar arquivos"
+  },
+  "start": {
+    "message": "Iniciar"
+  },
+  "pause": {
+    "message": "Pausar"
+  },
+  "noTorrents": {
+    "message": "Nenhum torrent neste servidor."
+  },
+  "nothingHere": {
+    "message": "Nada aqui."
+  },
+  "torrentError": {
+    "message": "Erro: $1"
+  },
+  "pctOf": {
+    "message": "$1 de $2"
+  },
+  "peersOf": {
+    "message": "pares $1/$2"
+  },
+  "timeLeft": {
+    "message": "faltam $1"
+  },
+  "seedingInfo": {
+    "message": "Semeando · proporção $1 · pares $2"
+  },
+  "verifyingPct": {
+    "message": "Verificando $1"
+  },
+  "pausedInfo": {
+    "message": "Pausado · $1"
+  },
+  "optionsTitle": {
+    "message": "Transmission Remote – Configurações"
+  },
+  "welcomeHtml": {
+    "message": "Boas-vindas! Digite o endereço do seu servidor Transmission e clique em <b>Testar conexão</b>; depois escolha em quais pastas os torrents podem ser salvos."
+  },
+  "hintHtml": {
+    "message": "As outras configurações do Transmission (limites de velocidade, fila, pares…) são alteradas na <a id=\"webLink\" href=\"#\" target=\"_blank\">interface web do Transmission</a>."
+  },
+  "legendServer": {
+    "message": "1. Servidor"
+  },
+  "defaultProtocol": {
+    "message": "Protocolo padrão"
+  },
+  "serverAddress": {
+    "message": "IP ou URL do servidor"
+  },
+  "serverPlaceholder": {
+    "message": "ex.: 192.168.1.10, nas.local:9091 ou https://host:9091"
+  },
+  "defaultPort": {
+    "message": "Porta padrão"
+  },
+  "advanced": {
+    "message": "Avançado"
+  },
+  "rpcPath": {
+    "message": "Caminho RPC"
+  },
+  "webPath": {
+    "message": "Caminho da interface web"
+  },
+  "username": {
+    "message": "Usuário"
+  },
+  "ifRequired": {
+    "message": "(se necessário)"
+  },
+  "password": {
+    "message": "Senha"
+  },
+  "testConnection": {
+    "message": "Testar conexão"
+  },
+  "savedAfterTest": {
+    "message": "O endereço do servidor só é salvo após um teste bem-sucedido."
+  },
+  "legendFolders": {
+    "message": "2. Pastas de download permitidas"
+  },
+  "foldersInsideHtml": {
+    "message": "As pastas ficam dentro do <b>download-dir</b> do servidor"
+  },
+  "foldersHelpHtml": {
+    "message": "A janela de adicionar oferece apenas as pastas listadas aqui e pré-seleciona a <b>padrão</b> (ou a última usada, se nenhuma estiver marcada)."
+  },
+  "newDirPlaceholder": {
+    "message": "ex.: movies, shows ou vazio"
+  },
+  "usedByTorrents": {
+    "message": "Usadas pelos seus torrents:"
+  },
+  "legendBehaviour": {
+    "message": "3. Comportamento"
+  },
+  "optBadge": {
+    "message": "Mostrar o número de torrents baixando no ícone da barra de ferramentas"
+  },
+  "optInterceptClicks": {
+    "message": "Abrir a janela de adicionar ao clicar em um link .torrent ou magnet"
+  },
+  "optInterceptDownloads": {
+    "message": "Capturar também arquivos .torrent que o navegador começa a baixar"
+  },
+  "optStartAdded": {
+    "message": "Iniciar imediatamente os torrents adicionados por padrão"
+  },
+  "language": {
+    "message": "Idioma"
+  },
+  "langAuto": {
+    "message": "Automático"
+  },
+  "langNote": {
+    "message": "Automático usa o primeiro idioma compatível dos seus idiomas preferidos nas configurações do Edge."
+  },
+  "autosaveNote": {
+    "message": "As alterações são salvas automaticamente."
+  },
+  "saved": {
+    "message": "Salvo."
+  },
+  "connectsTo": {
+    "message": "Conecta a $1"
+  },
+  "permissionDenied": {
+    "message": "A permissão para este endereço não foi concedida"
+  },
+  "connectedTo": {
+    "message": "Conectado ao Transmission $1"
+  },
+  "noFoldersYet": {
+    "message": "Ainda não há pastas. Adicione uma abaixo."
+  },
+  "defaultOn": {
+    "message": "★ Padrão"
+  },
+  "setDefault": {
+    "message": "Definir padrão"
+  },
+  "defaultOnTitle": {
+    "message": "Pré-selecionada na janela de adicionar. Clique para usar a última pasta usada"
+  },
+  "setDefaultTitle": {
+    "message": "Pré-selecionar esta pasta na janela de adicionar"
+  },
+  "noFoldersAllowed": {
+    "message": "Nenhuma pasta permitida: a janela de adicionar não poderá adicionar torrents até você adicionar uma."
+  },
+  "addWindowTitle": {
+    "message": "Adicionar torrent – Transmission"
+  },
+  "addTorrent": {
+    "message": "Adicionar torrent"
+  },
+  "readingTorrent": {
+    "message": "Lendo o torrent…"
+  },
+  "couldntDownload": {
+    "message": "Não foi possível baixar o torrent."
+  },
+  "fallbackHelp": {
+    "message": "Você pode baixá-lo pelo navegador (botão abaixo, ou Ctrl+clique no link da página) e depois escolher aqui o arquivo baixado."
+  },
+  "fileAccessHintHtml": {
+    "message": "Para que isso aconteça automaticamente, ative <b>Permitir acesso a URLs de arquivo</b> para esta extensão: a janela passa a ler sozinha o arquivo que o Edge baixou."
+  },
+  "openExtSettings": {
+    "message": "Abrir configurações da extensão"
+  },
+  "downloadInBrowser": {
+    "message": "Baixar no navegador"
+  },
+  "chooseFile": {
+    "message": "Escolher arquivo .torrent…"
+  },
+  "orPressAdd": {
+    "message": "Ou clique em Adicionar para o Transmission tentar baixar o link sozinho."
+  },
+  "files": {
+    "message": "Arquivos"
+  },
+  "downloadTo": {
+    "message": "Baixar em"
+  },
+  "startNow": {
+    "message": "Começar a baixar imediatamente"
+  },
+  "errSiteRefused": {
+    "message": "O site recusou o download (HTTP $1)"
+  },
+  "errSiteUnreachable": {
+    "message": "Não foi possível conectar ao site"
+  },
+  "errSiteNotTorrent": {
+    "message": "O site não retornou um arquivo .torrent (talvez uma página de login)"
+  },
+  "errDownloadGone": {
+    "message": "O download desapareceu"
+  },
+  "errEdgeFailed": {
+    "message": "O Edge não conseguiu baixar ($1)"
+  },
+  "interrupted": {
+    "message": "interrompido"
+  },
+  "edgePaused": {
+    "message": "O Edge pausou o download. Retome-o nos downloads do Edge (Ctrl+J)."
+  },
+  "edgeAsksKeep": {
+    "message": "O Edge está perguntando se deve manter o arquivo. Escolha “Manter” nos downloads do Edge (Ctrl+J)."
+  },
+  "errTooLong": {
+    "message": "O download demorou demais"
+  },
+  "errReadFile": {
+    "message": "Não foi possível ler o arquivo baixado"
+  },
+  "waitingDownload": {
+    "message": "Aguardando o Edge terminar o download…"
+  },
+  "errFileNotTorrent": {
+    "message": "O arquivo baixado não é um .torrent (talvez uma página de login)"
+  },
+  "savedAs": {
+    "message": "O Edge salvou como $1. Escolha esse arquivo abaixo."
+  },
+  "downloading": {
+    "message": "Baixando…"
+  },
+  "factSize": {
+    "message": "Tamanho"
+  },
+  "sizeInFiles_one": {
+    "message": "$1 em $2 arquivo"
+  },
+  "sizeInFiles_other": {
+    "message": "$1 em $2 arquivos"
+  },
+  "factTracker": {
+    "message": "Tracker"
+  },
+  "moreTrackers": {
+    "message": "$1 (+$2 outros)"
+  },
+  "factComment": {
+    "message": "Comentário"
+  },
+  "factCreated": {
+    "message": "Criado"
+  },
+  "factPrivate": {
+    "message": "Privado"
+  },
+  "yes": {
+    "message": "Sim"
+  },
+  "selection": {
+    "message": "$1 de $2 · $3"
+  },
+  "noDirsAllowed": {
+    "message": "Ainda não há pastas de download permitidas."
+  },
+  "errNoDownloadDir": {
+    "message": "O Transmission não informou seu download-dir"
+  },
+  "freeSpace": {
+    "message": "$1 livres"
+  },
+  "freeSpaceLow": {
+    "message": "$1 livres (espaço insuficiente)"
+  },
+  "dirNotAllowed": {
+    "message": "Esta pasta não está na lista de permitidas"
+  },
+  "adding": {
+    "message": "Adicionando…"
+  },
+  "alreadyAdded": {
+    "message": "Este torrent já está no Transmission."
+  },
+  "added": {
+    "message": "Adicionado ao Transmission."
+  },
+  "nothingToAdd": {
+    "message": "Nada para adicionar."
+  },
+  "magnetLink": {
+    "message": "Link magnet"
+  },
+  "factType": {
+    "message": "Tipo"
+  },
+  "magnetType": {
+    "message": "Link magnet (a lista de arquivos aparece depois que o Transmission obtém os metadados)"
+  },
+  "factInfoHash": {
+    "message": "Hash"
+  },
+  "factTrackers": {
+    "message": "Trackers"
+  },
+  "torrentFallbackName": {
+    "message": "Torrent"
+  },
+  "setupFirst": {
+    "message": "Configure primeiro o seu servidor Transmission."
+  },
+  "errNoAddress": {
+    "message": "Digite o endereço do seu servidor Transmission"
+  },
+  "errBadAddress": {
+    "message": "Isso não parece um endereço válido"
+  },
+  "errProtocol": {
+    "message": "Apenas http e https são suportados"
+  },
+  "errAbsolute": {
+    "message": "Use uma pasta dentro de download-dir, não um caminho absoluto"
+  },
+  "errBadChars": {
+    "message": "O nome da pasta contém caracteres inválidos"
+  },
+  "errDotDot": {
+    "message": "\"..\" não é permitido: as pastas devem ficar dentro de download-dir"
+  },
+  "errNotSetUp": {
+    "message": "O servidor Transmission ainda não foi configurado"
+  },
+  "errCannotReach": {
+    "message": "Não foi possível acessar $1"
+  },
+  "errAuth": {
+    "message": "Usuário ou senha incorretos"
+  },
+  "errForbidden": {
+    "message": "Acesso negado pelo Transmission (verifique rpc-whitelist)"
+  },
+  "errHttp": {
+    "message": "O servidor respondeu HTTP $1"
+  },
+  "errRpc": {
+    "message": "Erro de RPC"
+  },
+  "errHandshake": {
+    "message": "Falha ao estabelecer a sessão"
+  },
+  "errBadTorrent": {
+    "message": "Não é um arquivo torrent válido"
+  },
+  "badgeNotSetUp": {
+    "message": "Transmission: ainda não configurado. Abra as opções da extensão."
+  },
+  "badgeSummary": {
+    "message": "Transmission: $1 baixando, $2 no total"
+  },
+  "badgeError": {
+    "message": "Transmission: $1"
+  },
+  "menuAdd": {
+    "message": "Adicionar ao Transmission…"
+  }
+}

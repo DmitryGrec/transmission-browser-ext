@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title data-i18n="optionsTitle">Transmission Remote – Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <h1 data-i18n="extName">Transmission Remote</h1>
+    <p id="welcome" class="note" hidden data-i18n-html="welcomeHtml">Welcome! Enter the address of your Transmission server and press <b>Test connection</b>, then choose which folders torrents may be saved to.</p>
+    <p class="hint" data-i18n-html="hintHtml">Other Transmission settings (speed limits, queue, peers…) are changed in the
+      <a id="webLink" href="#" target="_blank">Transmission web interface</a>.</p>
+    <form id="form" novalidate>
+      <fieldset>
+        <legend data-i18n="legendServer">1. Server</legend>
+        <div class="addrRow">
+          <label><span data-i18n="defaultProtocol">Default protocol</span>
+            <select id="defaultProtocol"><option value="http">http</option><option value="https">https</option></select>
+          </label>
+          <label><span data-i18n="serverAddress">Server IP or URL</span>
+            <input id="server" type="text" placeholder="e.g. 192.168.1.10, nas.local:9091 or https://host:9091" data-i18n-placeholder="serverPlaceholder" spellcheck="false" autocomplete="off">
+          </label>
+          <label><span data-i18n="defaultPort">Default port</span>
+            <input id="defaultPort" type="number" min="1" max="65535">
+          </label>
+        </div>
+        <details>
+          <summary data-i18n="advanced">Advanced</summary>
+          <div class="row">
+            <label><span data-i18n="rpcPath">RPC path</span> <input id="rpcPath" type="text"></label>
+            <label><span data-i18n="webPath">Web interface path</span> <input id="webPath" type="text"></label>
+          </div>
+        </details>
+        <p id="resolved" class="muted"></p>
+        <div class="row">
+          <label><span><span data-i18n="username">Username</span> <span class="muted" data-i18n="ifRequired">(if required)</span></span>
+            <input id="username" type="text" autocomplete="username">
+          </label>
+          <label><span data-i18n="password">Password</span>
+            <input id="password" type="password" autocomplete="current-password">
+          </label>
+        </div>
+        <div class="buttons"><button type="button" id="connect" data-i18n="testConnection">Test connection</button><span id="connStatus" role="status"></span></div>
+        <p class="muted small" data-i18n="savedAfterTest">The server address is saved only after a successful test.</p>
+      </fieldset>
+
+      <fieldset id="foldersBox" disabled>
+        <legend data-i18n="legendFolders">2. Allowed download folders</legend>
+        <p class="muted small"><span data-i18n-html="foldersInsideHtml">Folders are inside the server's <b>download-dir</b></span><span id="rootLabel"></span>.
+          <span data-i18n-html="foldersHelpHtml">The add dialog only offers the folders listed here and preselects the <b>default</b> one
+          (or the last one used, if none is marked).</span></p>
+        <ul id="dirList"></ul>
+        <div class="addRow">
+          <span class="prefix" id="prefix">download-dir/</span>
+          <input id="newDir" type="text" placeholder="e.g. movies, shows or empty" data-i18n-placeholder="newDirPlaceholder" spellcheck="false">
+          <button type="button" id="addDir" data-i18n="add">Add</button>
+        </div>
+        <p id="dirError" class="err small"></p>
+        <div id="suggestBox" hidden><span class="muted small" data-i18n="usedByTorrents">Used by your torrents:</span> <span id="suggest"></span></div>
+      </fieldset>
+
+      <fieldset>
+        <legend data-i18n="legendBehaviour">3. Behaviour</legend>
+        <label class="check"><input id="badge" type="checkbox"> <span data-i18n="optBadge">Show number of downloading torrents on the toolbar icon</span></label>
+        <label class="check"><input id="interceptClicks" type="checkbox"> <span data-i18n="optInterceptClicks">Open the add dialog when I click a .torrent or magnet link</span></label>
+        <label class="check"><input id="interceptDownloads" type="checkbox"> <span data-i18n="optInterceptDownloads">Also catch .torrent files the browser starts downloading</span></label>
+        <label class="check"><input id="startAdded" type="checkbox"> <span data-i18n="optStartAdded">Start added torrents right away by default</span></label>
+        <label class="lang"><span data-i18n="language">Language</span>
+          <select id="language"></select>
+        </label>
+        <p class="muted small" data-i18n="langNote">Automatic uses the first supported language from your preferred languages in Edge settings.</p>
+      </fieldset>
+
+      <p id="status" class="muted small" role="status" data-i18n="autosaveNote">Changes are saved automatically.</p>
+    </form>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>
