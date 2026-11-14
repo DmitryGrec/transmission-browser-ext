@@ -14,6 +14,25 @@ language. The name and short description come from the package (`_locales/*/mess
 | Mature content | No |
 | Pricing | Free |
 
+**Single purpose description**
+
+```
+Remote control for the user's own Transmission BitTorrent server. The extension shows the torrents on that server (progress, speed, status) and lets the user start, pause and remove them, and it sends .torrent files and magnet links the user clicks in the browser to that server, with a choice of file list and download folder. All features serve this one purpose: managing and adding torrents on the user's Transmission server from Edge. It has no other functions, collects no data and talks only to the server address the user enters.
+```
+
+**Permission justifications**
+
+| Permission | Justification |
+|---|---|
+| storage | Stores the settings the user enters on the options page (Transmission server address, username, password, allowed download folders, on/off switches) in chrome.storage.sync so they follow the user's Edge profile, the last used download folders in chrome.storage.local, and, in chrome.storage.session, the Transmission RPC session id and the pending "Add torrent" request passed from the background worker to the add dialog. Nothing is sent anywhere except the user's own Transmission server. |
+| alarms | Refreshes the toolbar badge (number of active downloads, error state) once a minute, and runs a 3-minute safety timer that turns Edge's download bubble back on if the add dialog is closed unexpectedly. |
+| contextMenus | Adds an "Add to Transmission…" item to the right-click menu, shown only on links to .torrent files. |
+| downloads | When Edge starts downloading a .torrent file, the extension opens its add dialog for that file, reads the downloaded copy and deletes it afterwards so no leftover file stays in the Downloads folder. Also used by the dialog's "Download in browser" fallback button. |
+| downloads.ui | Hides Edge's download bubble while the add dialog handles a caught .torrent download, so the user sees only the dialog. It is turned back on as soon as that download is handled, the dialog closes, after 3 minutes, or when the browser starts. |
+| cookies | Some sites only serve a .torrent file to logged-in users. When the extension downloads such a file for the add dialog, it reads that site's cookies and sends them only to that same site, exactly as the browser would. Cookies are not stored, logged or sent anywhere else. |
+| declarativeNetRequestWithHostAccess | Adds a temporary session rule that sets the Cookie and Referer headers on the extension's own request for a .torrent file, for that one host only, so the request looks like the browser's and login-protected sites do not refuse it. The rule is removed right after the download. |
+| Host permission (<all_urls>) and content script | The content script notices the user's clicks on .torrent and magnet links on any page and opens the add dialog instead. The extension needs access to any host to download .torrent files from whichever site hosts them and to reach the user's Transmission server at any address the user enters (home IP, NAS name, seedbox domain). Page content is never read, collected or modified. |
+
 ## Images (all in `store/images/`)
 
 | Slot | File | Size |

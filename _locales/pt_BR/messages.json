@@ -147,7 +147,7 @@
     "message": "1. Servidor"
   },
   "defaultProtocol": {
-    "message": "Protocolo padrão"
+    "message": "Protocolo"
   },
   "serverAddress": {
     "message": "IP ou URL do servidor"
@@ -156,7 +156,7 @@
     "message": "ex.: 192.168.1.10, nas.local:9091 ou https://host:9091"
   },
   "defaultPort": {
-    "message": "Porta padrão"
+    "message": "Porta"
   },
   "advanced": {
     "message": "Avançado"
