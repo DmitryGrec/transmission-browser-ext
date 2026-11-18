@@ -142,8 +142,16 @@ chrome.downloads.onErased.addListener(async (id) => {
   if ((await hiddenDownloads()).includes(id)) restoreDownloadUi(id);
 });
 
+// onCreated also fires for old entries Edge loads from its download history (at browser start, or
+// when the downloads manager initializes later): only a download that is running and started just
+// now is a new one.
+const FRESH_MS = 60_000;
+const isFresh = (item) =>
+  item.state === "in_progress" && !(Date.now() - Date.parse(item.startTime) > FRESH_MS);
+
 chrome.downloads.onCreated.addListener(async (item) => {
   if (!looksLikeTorrent(item) || item.byExtensionId === chrome.runtime.id) return;
+  if (!isFresh(item)) return;
   if (bypassed(item.url) || bypassed(item.finalUrl)) return;
   if (!/^https?:/i.test(item.finalUrl || item.url)) return;
   if (!(await getSettings()).interceptDownloads) return;
