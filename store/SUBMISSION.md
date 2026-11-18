@@ -27,7 +27,7 @@ already received.
 ## 3. Create the submission
 
 Partner Center → Microsoft Edge → **Create new extension** → upload
-`dist/transmission-edge-1.0.0.zip`. Then fill in each page:
+`dist/transmission-edge-1.0.1.zip`. Then fill in each page:
 
 - **Availability**: Visibility *Public*, Markets *all*.
 - **Properties**: use the table at the top of `LISTING.md`.
